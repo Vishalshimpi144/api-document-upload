@@ -1,0 +1,43 @@
+Python create virtual environment
+    py -3 -m venv ENV_NAME
+
+Activate environment
+    execute activate.bat on command prompt from terminal
+    e.g. kalp\Scripts\activate.bat
+
+Install fastapi (--do not use "pip install fastapi[all]" this is not supported in windoes)
+    pip install fastapi    
+
+run web api (used app.main becuase main file inside the app folder)
+    uvicorn app.main:app --reload 
+
+install psycopg2 for postgress database connection
+    pip install psycopg2
+
+host='localhost', database='FastAPISampledb', user='postgres', password='admin'
+
+install sqlalchemy
+    pip install sqlalchemy
+
+install pydentic
+    pip instlal pydentic
+
+install bcrypt
+    pip install passlib[bcrypt]
+
+install alembic for databse migration
+    pip install alembic
+
+    alembic commands
+        1. alembic revision -m "comment" #add users table/ create foreign key constraints etc
+        2. alembic upgrade revision_number/head
+
+        3. alembic heads -> to identify current head
+        4. alembic current -> to check current revision
+
+    **for autoscript generation 
+        1. alembic revision --autogenerate -m "comment"
+        2. alembic upgrade head
+
+
+
