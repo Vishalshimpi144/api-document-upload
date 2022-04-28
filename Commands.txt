@@ -38,6 +38,17 @@ install alembic for databse migration
     **for autoscript generation 
         1. alembic revision --autogenerate -m "comment"
         2. alembic upgrade head
+    
+push code to to git
+    1. git push
+
+Heroku command
+    1. heroku --version
+    2. heroku login
+    3. git push heroku main - to deploy code to heroku
+    4. heroku addons:create heroku-postgresql:hobby-dev
+    5. heroku ps:restart    -to restart heroku instance after changes
+
 
 
 
