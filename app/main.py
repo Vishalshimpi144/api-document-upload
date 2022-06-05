@@ -33,7 +33,3 @@ app.include_router(document.router)
 @app.get("/")
 def root():
     return {"message": "Hello World!"}
-
-@app.get("/user")
-def getuser():
-    return {"message": "Hello User!"}
