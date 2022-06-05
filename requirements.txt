@@ -58,7 +58,6 @@ python-dateutil
 python-dotenv==0.19.2
 python-jose==3.3.0
 python-multipart==0.0.5
-pywin32==304
 PyYAML==5.4.1
 pyzmq
 requests==2.27.1
